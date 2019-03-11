@@ -1,9 +1,6 @@
-//this version needs spaces to work
-
 {
   var mArissa = document.createElement("img");
 mArissa.src ="images/m01.jpg";
-document.body.appendChild(mArissa);
 }
 
 start = (time / movement)+
@@ -15,11 +12,12 @@ time = "[" loop:movement+ "]" _ {
 		result.push(movement);
 		result.push([dur, 0.25]);
 	}
-	return loop, results;
+	return [loop, results];
 }
 
-movement = duck / kneel / fall
+movement = duck / kneel / fall / rest
 
+rest = " " { return []; }
 duck = "duck" {return mArissa;}
 kneel = "kneel" {return mArissa;}
 fall = "fall" {return mArissa;}
@@ -27,5 +25,5 @@ fall = "fall" {return mArissa;}
 //phrase = (retrograde / accumulation / ABBA)
 //	retrograde = reverse();
 
-_ = " "
+_ = [ \t\n\r]*
 //space
