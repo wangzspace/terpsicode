@@ -1,18 +1,25 @@
-
 {
   var mArissa = document.createElement("img");
 mArissa.src ="images/m01.jpg";
 document.body.appendChild(mArissa);
-//document.write("work please")
+}
 
-start = (movement / phrase / time)
+start = (time / movement)+
+
+time = "[" loop:movement+ "]" {
+	var dur = 1/movement.length;
+	var results = [];
+	for (var movement of loop) {
+		result.push(movement);
+		result.push([dur, wait]);
+	}
+	return [loop, results];
+}
 
 movement = duck / kneel / fall
 
-duck = " " {return mArissa;}
-kneel = " " {return mArissa;}
-fall = " " {return mArissa;}
+duck = "duck" {return mArissa;}
+kneel = "kneel" {return mArissa;}
+fall = "fall" {return mArissa;}
 
-phrase = (retrograde / accumulation / ABBA)
-
-time = (speed / sustain / sudden)
+//phrase = (retrograde / accumulation / ABBA)
