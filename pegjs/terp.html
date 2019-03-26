@@ -1,0 +1,43 @@
+
+<html>
+<head>
+
+<link rel="stylesheet" href="codemirror/lib/codemirror.css">
+
+<script src="pegmin.js"></script>
+<script src="pegjs.js"></script>
+
+<script src="codemirror/lib/codemirror.js"></script>
+
+<script src="marissaparser.js"></script>
+
+</head>
+
+
+<body>
+
+Here is some text that should be loading
+<div id ="peg_msg"></div>
+
+
+<script>
+var peged = CodeMirror.fromTextArea(document.getElementById("peged"), {mode: "pegjs"});
+var peg_msg_div = document.getElementById("peg_msg");
+
+
+</script>
+
+<script>
+
+
+   {
+     return peged;
+   }
+</script>
+
+
+
+
+</body>
+
+</html>
