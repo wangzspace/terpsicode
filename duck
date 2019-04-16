@@ -1,0 +1,32 @@
+{
+  const duck = document.createElement( 'img' )
+  duck.src='tagged/duck/1.jpg'
+
+var index = 2;
+  const walk = document.createElement( 'img' )
+  walk.src='tagged/walk/' + index + '.jpg';
+
+
+
+  const display = img => {
+    const image = document.querySelector( 'img' )
+    if( image === null ) {
+      document.body.appendChild( img )
+    }
+    else{
+      document.body.replaceChild( img, image)
+    }
+  }
+
+
+}
+
+
+
+
+movement = duck / walk
+duck = "duck" { display( duck ) }
+walk = "walk" { display( walk ) }
+
+_ "whitespace"
+  = [ \t\n\r]*
