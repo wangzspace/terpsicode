@@ -1,0 +1,67 @@
+{
+  const stomachspiral = document.createElement( 'img' )
+  stomachspiral.src='tagged/stomachspiral/3.jpg'
+
+  const duck = document.createElement( 'img' )
+  duck.src='tagged/duck/1.jpg'
+
+  const flick = document.createElement( 'img' )
+  flick.src='tagged/flick3/1.jpg'
+
+
+
+  const fall = document.createElement( 'img' )
+  fall.src='tagged/fall/1.jpg'
+
+
+var index = 3;
+  const walk = document.createElement( 'img' )
+  walk.src='tagged/walk/' + index + '.jpg';
+
+
+const display = (img,n) => {
+//console.log(n)
+if (n = null) n = 2000;
+else n = n*10000;
+
+function displayImage() {
+    var image = document.querySelector( 'img' )
+        if( image === null ) {
+        document.body.appendChild( img )
+      }
+      else{
+        document.body.replaceChild( img, image)
+      }
+      index++
+      if (index > 10) index = 1;
+      //console.log("index " + index);
+    //  console.log("image: " + img + image);
+      walk.src='tagged/walk/' + index + '.jpg';
+}
+
+
+
+setInterval(displayImage,6000);
+
+}
+
+}
+
+movement = (duck / walk / stomachspiral / fall / rest / flick )+
+
+duck = "duck"nums:num* { display( duck , nums)}
+
+walk = "walk"nums:num* { display( walk , nums )}
+
+stomachspiral = "stomachspiral"nums:num* { display( stomachspiral , nums ) }
+
+fall = "fall"nums:num* { display (fall, nums) }
+
+flick = "flick"nums:num* { display (flick, nums) }
+
+rest = " "
+
+num = [0-9]
+
+_ "whitespace"
+  = [ \t\n\r]*
